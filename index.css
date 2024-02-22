@@ -79,15 +79,14 @@ button:hover{
 
 .sub-container{
   background-color: #abe7ad;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  padding-top: 70px; 
+  padding-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 5rem;
     flex-wrap: wrap;
     flex-direction: row;
-    row-gap: 1rem;
 }
 .sub-container a{
   text-decoration: none;
@@ -142,10 +141,6 @@ border-radius: 0.5rem;
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    display: grid; 
-    grid-template-columns: repeat(3 ,1fr); 
     flex-wrap: wrap;
     flex-direction: row;
   }

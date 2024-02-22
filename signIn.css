@@ -116,12 +116,14 @@
   text-shadow: rgb(214, 214, 99) 0.15rem 0.08rem;
  }
 .login-button{
+  background-color: #00bff3;
+  border: none;
   font-size: 1.2rem;
   padding: 0.4rem;
   border-radius: 0.4rem;
 }
 .login-button:hover{
-  background-color: #00bff3;
+  background-color: rgba(245, 245, 245, 0.758);
   cursor: pointer;
   border: none;
   border-radius: 0.4rem;

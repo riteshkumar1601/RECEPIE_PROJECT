@@ -90,6 +90,10 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+.sub-container a{
+  color: rgba(6, 0, 95, 0.539);
+  text-decoration: underline;
+}
 
 .sub-container-heading{
   background-color: #abe7ad;

@@ -129,18 +129,25 @@ legend{
     color: brown;
 }
 
-/* for footer */
+/* Clear floats after image containers */
+  .row1::after {
+    content: "";
+    clear: both;
+  }
 
-figure {
+/* for footer */
+/* 
+/* figure {
   max-width: 100%;
-}
+} */
 html,
 body {
   overflow-x: hidden;
   color: #000;
+  height: auto;
   -ms-overflow-style: scrollbar;
   -webkit-font-smoothing: antialiased;
-}
+} 
 a,
 a:hover,
 a:focus,
@@ -159,7 +166,8 @@ a {
   background-color: #111;
   padding-top: 70px;
   margin-top: 20px;
-  position: relative;
+  /* height: auto; */
+  /* position: relative; */
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -169,10 +177,10 @@ a {
   padding-bottom: 2rem;
 }
 .socialmedia{
-  width: 25%;
-height: 15%;
+  display: grid;
+  width: 35%;
+  height: 25%;
 }
-
 .ct-footer-pre {
   width: 100%;
   padding-bottom: 55px;
@@ -185,7 +193,7 @@ height: 15%;
   font-size: 30px;
 }
 .ct-footer-pre .form-group {
-  position: relative;
+  /* position: relative; */
   margin: 0;
 }
 .ct-footer-pre .form-group:before,
@@ -207,7 +215,7 @@ height: 15%;
 }
 .ct-footer-pre .form-group button {
   height: 50px;
-  position: relative;
+  /* position: relative; */
   width: 80px;
   padding: 0
 }
@@ -244,9 +252,6 @@ height: 15%;
 .ct-footer-post .inner-right {
   padding: 20px 0;
   padding-left: 3rem;
-}
-.ct-footer-post .inner-left{
-  padding-right: 8rem;
 }
 .ct-footer-post ul {
   list-style: none;
@@ -450,7 +455,13 @@ address a:hover {
   font-weight: 700;
   line-height: 1;
 }
-
+.footer-container{
+  display: grid;
+ color: white;
+}
+.footer-container ul{
+  list-style-type: none;
+}
 /* Media Queries */
 
 @media (min-width:1200px) {
@@ -486,9 +497,9 @@ address a:hover {
   .ct-footer-post .inner-left {
     float: left;
   }
-  /* .ct-footer-post .inner-right {
+  .ct-footer-post .inner-right {
     float: right;
-  } */
+  }
 }
 @media (max-width:991px) {
   .ct-footer-post {
@@ -572,5 +583,4 @@ address a:hover {
     font-size: 28px;
   }
 }
-
 

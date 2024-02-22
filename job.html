@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="shortcut icon" href="./image/recepi logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="job.css">
+    
+  <style>
+
+@media only screen and (max-width: 300px) { 
+      #heading{
+      font-size: 2rem;
+    }
+}
+    @media only screen and (min-width: 150px) {
+    #navitems{
+       display: flex;
+       flex-wrap: wrap;
+        flex-basis: auto;
+        align-content: start;
+        align-self: self-start;  
+        font-size: 14px;
+        row-gap: 0;
+        column-gap: 10px; 
+    }
+}
+@media only screen and (min-width: 300px) {
+    #navitems{
+       display: flex;
+       flex-wrap: wrap;
+        flex-basis: auto;
+        align-content: start;
+        align-self: self-start;  
+        font-size: 14px;
+        row-gap: 0;
+        column-gap: 10px; 
+    }
+    
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) {
+    #navitems{
+       display: flex;
+       flex-wrap: wrap;
+        flex-basis: auto;
+        align-content: start;
+        align-self: self-start;  
+        font-size: 18px;
+        row-gap: 0;
+        column-gap: 14px; 
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 800px) {
+    #navitems{
+       display: flex;
+       flex-wrap: wrap;
+        flex-basis: auto;
+        align-content: start;
+        align-self: self-start; 
+        font-size: 20px;
+        row-gap: 0;
+        column-gap: 15px; 
+      
+    }
+   
+}
+
+/* Medium devices (landscape tablets, 980px and up) */
+@media only screen and (min-width: 980px) {
+    #navitems{
+       display: flex;
+       flex-wrap: wrap;
+        flex-basis: auto;
+        align-content: start;
+        align-self: self-start;  
+        font-size: 25px;
+        row-gap: 0;
+        column-gap: 18px;
+        flex-shrink: 3;
+    }
+   
+}
+/* Large devices (laptops/desktops, 1100px and up) */
+@media only screen and (min-width: 1100px) {
+    #navitems{
+       display: flex;
+       flex-wrap: wrap;
+        flex-basis: auto;
+        align-content: start;
+        align-self: self-start;  
+        font-size: 28px;
+        row-gap: 0;
+        column-gap: 24px; 
+    }
+   
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #navitems{
+       display: flex;
+       flex-wrap: wrap;
+        flex-basis: auto;
+        align-content: start;
+        align-self: self-start; 
+        
+    }
+    }
+  </style>
+
+</head>
+<body>
+  <header id="header-container"> 
+   
+    <div id="navitems">
+
+      <div class="dropdown">
+          
+        <a href="link" class="dropbtn">Home</a> 
+
+          <div class="dropdown-content">
+            <a href="introduction.html">About</a>
+            <a href="#">Our Impact</a>
+            <a href="#">Prediabetes</a>
+            <a href="#">Wellness Wednesday</a>
+            <a href="#">Become a partner</a>
+            <a href="#">Volunteer</a>
+            <a href="#">Community Engagement</a>
+            <a href="#">News and Webinar</a>
+            <a href="#">Podcast</a>
+            <a href="#">Lectures</a>
+          </div>
+      </div>       
+                        
+          <a href="link">Contact Us</a>
+          <a href="link">Company</a>
+          <a href="link">Programs</a>
+          <a href="link">Get Involved</a>
+          <a href="link">Events</a>
+          <a href="link" >Recipes</a>
+          <a href="link">Media</a>
+          <a href="link">Shop</a>
+      </div>              
+</header>
+
+<main>
+  <div class="sub-container">
+    <div >
+      <img src="./image/recepi logo.webp" alt="recepi">
+    </div>
+    <div >
+      <h1 id="heading">Job Application</h1>
+    </div>
+  </div>
+    <div class="main-container-job">
+      <form>
+
+        <label for="name">Name :</label>
+        <input type="text" name="student name" id="name">
+        <br/>      
+        <br/>    
+
+        <label for="email">Email:</label>
+        <input type="email" name="student email" id="email">
+        <br/>      
+        <br/> 
+        
+        <label for="tel">Phone NO :</label>
+        <input type="tel" name="student phone no" id="tel">
+         <br/>      
+         <br/>  
+
+        <label for="details">Resume :</label>
+        <input type="file" name="student details" id="details">
+        <br/>      
+        <br/>   
+        <label for="counter">Expeience (years) :</label>
+        <input type="number" name="counter" id="counter" min="0" max="50">   
+        <br/>      
+        <br/>      
+        
+        <fieldset>
+          <legend>Skills</legend>
+          <label for="html">HTML</label>
+          <input type="checkbox" name="skills" id="html">
+          <br/>
+          <br/>          
+          <label for="css">CSS</label>
+          <input type="checkbox" name="skills" id="css">
+          <br/>
+          <br/>
+
+          <label for="java">Java Script</label>
+          <input type="checkbox" name="skills" id="java">
+          </fieldset>
+          <br/>
+          <br/>
+
+          <label for="education">Higher Education :</label>
+          <select name="student education" id="education">
+
+          <option value="10">None</option>
+          <option value="10">10th</option>
+          <option value="12">12th</option>
+          <option value="diploma">Diploma</option> 
+          <option value="graduation">Graduation</option>
+
+          </select>
+          <br/>
+          <br/>
+          <fieldset>
+            <legend>Availability</legend>
+            <label for="full time">Full-Time</label>
+            <input type="radio" name="time duration" id="full time" checked/>
+
+            <label for="part time">Part-Time</label>
+            <input type="radio" name="time duration" id="part time"/>
+        </fieldset>
+            <br/>
+            <br/>
+           <h2>Additional Comments :</h2>
+            <textarea name="student opinion" id="opinion" cols="30" rows="10"></textarea>
+
+         <button class="submit-button">submit Application</button>
+     </form>
+</main>
+
+<footer class="ct-footer">
+  <div class="container">
+    <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+      <div class="ct-footer-pre text-center-lg">
+        <div class="inner">
+          <span>Join Recipes to receive updates, news & events!</span>
+        </div>
+        <div class="inner">
+          <div class="form-group">
+            <input name="formfields[nl_email]" id="nl_email" class="validate[required]" placeholder="Enter your email address" type="text" value=""> <label for="nl_email" class="sr-only">Email Address</label> <button type="submit" class="btn btn-motive">Join</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <ul class="ct-footer-list text-center-sm">
+      <li>
+        <h2 class="ct-footer-list-header">Learn More</h2>
+        <ul>
+          <li>
+            <a href="">Company</a>
+          </li>
+          <li>
+            <a href="">Clients</a>
+          </li>
+          <li>
+            <a href="">News</a>
+          </li>
+          <li>
+            <a href="">Careers</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="ct-footer-list-header">Services</h2>
+        <ul>
+          <li>
+            <a href="">Design</a>
+          </li>
+          <li>
+            <a href="">Marketing</a>
+          </li>
+          <li>
+            <a href="">Sales</a>
+          </li>
+          <li>
+            <a href="">Programming</a>
+          </li>
+          <li>
+            <a href="">Support</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="ct-footer-list-header">The Industry</h2>
+        <ul>
+          <li>
+            <a href="">Thought Leadership</a>
+          </li>
+          <li>
+            <a href="">Webinars</a>
+          </li>
+          <li>
+            <a href="">Events</a>
+          </li>
+          <li>
+            <a href="">Sponsorships</a>
+          </li>
+          <li>
+            <a href="">Advisors</a>
+          </li>
+          <li>
+            <a href="">Training Program</a>
+          </li>
+          <li>
+            <a href="">Activities & Campaigns</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="ct-footer-list-header">Public Relations</h2>
+        <ul>
+          <li>
+            <a href="">Recipes Blog</a>
+          </li>
+          <li>
+            <a href="">Hackathons</a>
+          </li>
+          <li>
+            <a href="">Videos</a>
+          </li>
+          <li>
+            <a href="">News Releases</a>
+          </li>
+          <li>
+            <a href="">Newsletters</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="ct-footer-list-header">About</h2>
+        <ul>
+          <li>
+            <a href="">FAQ</a>
+          </li>
+          <li>
+            <a href="">Our Board</a>
+          </li>
+          <li>
+            <a href="">Our Staff</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="ct-footer-meta text-center-sm">
+      <div class="row">
+       
+        <div class="col-sm-6 col-md-3">
+          <address>
+            <span>Recipes<br></span>123 Easy Street<br>
+            Orlando, Florida, 32801<br>
+            <span>Phone: <a href="tel:5555555555">(555) 555-8899</a></span>
+          </address>
+        </div>
+        
+        <div class="col-sm-6-col-md-3">
+          <img alt="logo" src="./image/recepi logo.webp" class="socialmedia">
+          <a href="https://www.apple.com" target="_blank"><img alt="app store" src="./image/appstore.png" class="socialmedia"></a>
+          <a href="https://m.facebook.com" target="_blank"><img alt="facebook" src="./image/facebook.png" class="socialmedia"></a>
+          <a href="https://twitter.com" target="_blank"><img alt="twitter" src="./image/twitter.png" class="socialmedia"></a>
+          <a href="https://www.youtube.com" target="_blank"><img alt="youtube" src="./image/youtube.jpg" class="socialmedia"></a>
+          <a href="https://www.instagram.com" target="_blank"><img alt="instagram" src="./image/instagram.jpg" class="socialmedia"></a>
+          <a href="https://in.pinterest.com" target="_blank"><img alt="pinterest" src="./image/pintrest.jpg" class="socialmedia"></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+  <div class="inner-left">
+    <ul>
+      <li>
+        <a href="">FAQ</a>
+      </li>
+      <li>
+        <a href="">News</a>
+      </li>
+      <li>
+        <a href="">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+  <div class="inner-right">
+    <p>Copyright © 2023 Recipes.&nbsp;<a href="">Privacy Policy</a></p>
+    <p><a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by Mr Ritesh  </p>
+  </div>
+</div>
+</footer> 
+
+</body>
+</html>

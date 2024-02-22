@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        
+      .container{
+        /* width: 100vw;
+        height: 100vh; */
+        width: 100%;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      }
+      .card1, .card2, .card3{
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        border-radius: 20px;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+      .card1 img{
+        width: 100%;
+        height: 30%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+       
+      }
+      .card2 img{
+        width: 100%;
+        height: 30%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .card3 img{
+        width: 100%;
+        height: 30%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .text-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 6px;
+        width: 75%;
+      }
+      .amount-box{
+        width: 80%;
+        height: 8%;
+        background-color: #8EC5FC;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+      
+      }
+      .payment-button{
+        width: 80%;
+        height: 8%;
+        background-color: #0a0f4d;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        color: white;
+        font-weight: bold;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      }
+      .cancel-box{
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      a{
+        text-decoration: none;      
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+      .leftbox{
+        display: flex;
+        flex-direction: row;
+      }
+      .leftbox img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #8EC5FC;
+        padding-left: 8px;
+      }
+    .leftamount-para{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+      .rightbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 15px;
+      }
+    
+      @media only screen and (max-width:1050px){
+        .container{
+          display: flex;
+       flex-wrap: wrap;
+        flex-basis: auto;
+        align-content: start;
+        align-self: self-start;
+        column-gap: 2rem;
+        }
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="card1">
+                <img src="./image/atmimage.jpg" alt="card payment">
+                <h2>Choose for payment</h2>
+                <p class="text-box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Vel enim voluptates aut quia praesentium voluptate voluptatibus 
+                    ipsum impedit aliquam fugiat!</p>
+                    <div class="amount-box">
+                        <div class="leftbox">
+                          <div>
+                            <img src="./image/musiclogo.jpg" alt="song">
+                          </div>
+                          <div>
+                            <p class="leftamount-para">Annual Plan $99.9/year</p>
+                          </div>
+                        </div>
+                        <div class="rightbox">
+                          <a href="#">Change</a>
+                        </div>
+                    </div>
+                    <button class="payment-button">
+                        Proceed to Payment
+                    </button>
+                    <div class="cancel-box">
+                        <a href="#">Cancel Order</a>
+                    </div>
+              
+            </div>
+
+            <!-- <div class="card2">
+                <img src="./image/atmimage3.jpg" alt="">
+                <h2>order summary</h2>
+                <p class="text-box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Vel enim voluptates aut quia praesentium voluptate voluptatibus 
+                    ipsum impedit aliquam fugiat!</p>
+                    <div class="amount-box">
+                      <div class="leftbox">
+                        <div>
+                          <img src="./image/musiclogo.jpg" alt="song">
+                        </div>
+                        <div>
+                          <p class="leftamount-para">Annual Plan $99.9/year</p>
+                        </div>
+                      </div>
+                      <div class="rightbox">
+                        <a href="#">Change</a>
+                      </div>
+                    </div>
+                    <button class="payment-button">
+                        Proceed to Payment
+                    </button>
+                    <div class="cancel-box">
+                        <a href="#">Cancel Order</a>
+                    </div>
+            </div>
+
+            <div class="card3">
+                <img src="./image/recipescard2.jpg" alt="">
+                <h2>order summary</h2>
+                <p class="text-box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Vel enim voluptates aut quia praesentium voluptate voluptatibus 
+                    ipsum impedit aliquam fugiat!</p>
+                    <div class="amount-box">
+                      <div class="leftbox">
+                        <div>
+                          <img src="./image/musiclogo.jpg" alt="song">
+                        </div>
+                        <div>
+                          <p class="leftamount-para">Annual Plan $99.9/year</p>
+                        </div>
+                      </div>
+                      <div class="rightbox">
+                        <a href="#">Change</a>
+                      </div>
+                    </div>
+                    <button class="payment-button">
+                        Proceed to Payment
+                    </button>
+                    <div class="cancel-box">
+                        <a href="#">Cancel Order</a>
+                    </div> -->
+            </div>
+    </div>
+
+   
+</body>
+</html>
